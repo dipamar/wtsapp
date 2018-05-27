@@ -1,66 +1,66 @@
 var contJSON= {
 	"contact": [{
-            "name": "Android1",
+            "name": "Daenerys Targaryen",
             "messages":[],
-            "number": "#####",
-            "last_seen": "last seen 2.05 am",
-            "time": "3.09 am"
+            "number": "#######",
+            "last_seen": "last seen 1.05 am",
+            "time": "1.05 am"
             
         },
 		{
-            "name": "Android2",
+            "name": "Arya Stark",
             "messages":[],
-            "number": "#####",
+            "number": "######",
             "last_seen": "last seen 1.00 am",
             "time": "today"
 
         },
 		{
-            "name": "Android3",
+            "name": "Ned Stark",
             "messages":[],
-            "number": "#####",
-            "last_seen": "last seen yeesterday 2.05 pm",
+            "number": "######",
+            "last_seen": "last seen today 5.05 pm",
             "time": "yesterday"
             
 		},
 		{
-            "name": "Android4",
+            "name": "Cersei Lannister",
             "messages":[],
-            "number": "#####",
-            "last_seen": "last seen 4.00 am",
-            "time": "03/05/18"
+            "number": "######",
+            "last_seen": "last seen 8.00 am",
+            "time": "05/10/18"
 
         },
 		{
-            "name": "Android5",
+            "name": "Jaime Lannister",
             "messages":[],
-            "number": "#####",
-            "last_seen": "last seen 03/05/18",
-            "time": "03/05/18"
+            "number": "######",
+            "last_seen": "last seen 05/12/18",
+            "time": "05/10/18"
 
         },
 		{
-            "name": "Android6",
+            "name": "Tyrion Lannister",
             "messages":[],
-            "number": "#####",
-            "last_seen": "last seen 1.00 am",
-            "time": "05/05/18"
+            "number": "######",
+            "last_seen": "last seen 11.00 am",
+            "time": "08/05/18"
 
         },
 		{
-            "name": "Android7",
+            "name": "Sansa Stark",
             "messages":[],
             "number": "#####",
-            "last_seen": "last seen 9.00 am",
-            "time": "08/02/18"
+            "last_seen": "last seen 12.00 am",
+            "time": "08/04/18"
 
         },
 		{
-            "name": "Android8",
+            "name": "Bran Stark",
             "messages":[],
             "number": "#####",
             "last_seen": "last seen 10.00 am",
-            "time": "04/01/18"
+            "time": "04/03/18"
 
         }
 	],
@@ -87,7 +87,7 @@ var contJSON= {
     var n = false
    // initaiting jquerry library 
   $(document).ready(function(){
-     $(window).resize(function(){location.reload();});
+    $(window).resize(function(){location.reload();});
     // starting for loop
     for(let i =1;i<9;i++)
     { 
@@ -98,7 +98,7 @@ var contJSON= {
         
         <div class="py-3 px-3 rounded-circle picture${i} lambda"></div>
         <p class="text-left my-auto Awrt1 px-2 pl-3 ">${contJSON.contact[i-1].name}<br> 
-            <small class="text-left Awrt sailormoon1">loptgfvgh ghvghv hgfvhg</small></p>
+            <small class="text-left Awrt sailormoon1">Game of Thrones</small></p>
             <div class="pix${i} ml-auto le Awrt"><small class="Awrt sailormoon1">${contJSON.contact[i-1].time}</small></div>
     </div>`);
     $(`.picture${i}`).css(`background`,`url(static/A${i}.jpg)`);
@@ -109,10 +109,7 @@ var contJSON= {
         <i class="fas fa-angle-down"></i>
         </button>
         <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#2p" id="pork${i}" href="#">Stories</a>
-        <a class="dropdown-item reUn${i}" href="#" id="reUn${i}">${A}</a>
+        <a class="dropdown-item" href="#">Edit</a>
       </div>
     </div> `);
     // making carousel for story part
@@ -215,12 +212,12 @@ var contJSON= {
      // loop starts   
     for(let x =1;x<=i;x++) // increases the amount of convo with increasing order
        {$(`.set`).append(`<div class="Anushka my-3 mx-3 d-flex py-3 Awrt">
-                                <div class="flex-fill wb Awrt" ><p class="mx-4 rounded w-50 Awrt">Lorem ipsum dolor sit amet consectetur.</p></div>
+                                <div class="flex-fill wb Awrt" ><p class="mx-4 rounded w-50 Awrt">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss.</p></div>
                                 <div class="flex-fill wb Awrt" ><p class="mx-4 rounded text-right"></p></div>
                             </div>
                             <div class="Anushka my-3 mx-3 d-flex py-3 Awrt">
                                 <div class="flex-fill wb Awrt" ><p class="mx-auto rounded"></p></div>
-                                <div class="flex-fill wb Awrt"><p class="mx-4 rounded float-right w-50 Awrt">Lorem ipsum dolor sit amet consectetur.</p></div>
+                                <div class="flex-fill wb Awrt"><p class="mx-4 rounded float-right w-50 Awrt">Game of Thrones has attracted record viewership on HBO and has a broad, active, international fan bas</p></div>
                             </div>`).removeClass("bg-dark").removeClass("align-items-center").removeClass("justify-content-center") ;
                         
                             } // for loop ends
@@ -262,12 +259,12 @@ var contJSON= {
      // loop starts   
     for(let x =1;x<=i;x++) // increases the amount of convo with increasing order
        {$(`.set`).append(`<div class="Anushka my-3 mx-3 d-flex py-3">
-                                <div class="flex-fill wb Awrt" ><p class="mx-4 rounded w-50">Lorem ipsum dolor sit amet consectetur.</p></div>
+                                <div class="flex-fill wb Awrt" ><p class="mx-4 rounded w-50">Game of Thrones is an American fantasy drama television series.</p></div>
                                 <div class="flex-fill wb Awrt" ><p class="mx-4 rounded text-right"></p></div>
                             </div>
                             <div class="Anushka my-3 mx-3 d-flex py-3">
                                 <div class="flex-fill wb Awrt" ><p class="mx-auto rounded"></p></div>
-                                <div class="flex-fill wb Awrt"><p class="mx-4 rounded float-right w-50">Lorem ipsum dolor sit amet consectetur.</p></div>
+                                <div class="flex-fill wb Awrt"><p class="mx-4 rounded float-right w-50">Game of Thrones has attracted record viewership on HBO and has a broad.</p></div>
                             </div>`).removeClass("bg-dark").removeClass("align-items-center").removeClass("justify-content-center") ;
                         
                             } // for loop ends
